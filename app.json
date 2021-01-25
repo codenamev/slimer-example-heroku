@@ -1,0 +1,24 @@
+{
+  "name": "Slimer",
+  "description": "",
+  "keywords": ["Ruby", "Redis", "data", "IoT"],
+  "website": "https://github.com/codenamev/slimer-example-heroku",
+  "repository": "https://github.com/codenamev/slimer-example-heroku",
+  "logo": "https://github.com/codenamev/slimer-example-heroku/raw/main/heroku-button-logo.jpeg",
+  "success_url": "/status",
+  "env": {
+    "RAILS_MAX_THREADS": {
+      "description": "The number of threads to run puma in.",
+      "value": "5"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "2"
+    }
+  },
+  "image": "heroku/ruby",
+  "addons": [
+    "heroku-postgresql",
+    "heroku-redis"
+  ]
+}
